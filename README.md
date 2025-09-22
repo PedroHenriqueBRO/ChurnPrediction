@@ -59,8 +59,7 @@ Além disso, foi utilizada a técnica **MultiComparison** (do Statsmodels) para 
 ![Resultados dos Modelos Testados utilizando R² sem Smoteen](graficos_matrizes_tabelas/AlgoritmosTreinadosComSmoteenETestandoBaseNormal.png)
 - O teste foi feito também na base utilizando o resample do Smoteen
 ![Resultados dos Modelos Testados utilizando R² com Smoteen](graficos_matrizes_tabelas/AlgoritmosTreinadosComSmoteenETestandoBaseSmoteen.png)
-- Esses resultados foram gerados por modelos treinados com uma base de treino utilizando o resample do Smoteen pois ela gerou resultados melhores de treino
-- do que a base original.
+- Esses resultados foram gerados por modelos treinados com uma base de treino utilizando o resample do Smoteen pois ela gerou resultados melhores de treinodo que a base original.
 ---
 
 ## 📂 Estrutura do projeto
