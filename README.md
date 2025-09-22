@@ -47,7 +47,22 @@ Para comparar os modelos foram utilizadas métricas estatísticas clássicas de 
 - **MAE (Mean Absolute Error)** → erro médio absoluto.  
 - **MSE (Mean Squared Error)** → erro quadrático médio.  
 - **RMSE (Root Mean Squared Error)** → raiz do erro quadrático médio.  
-- **Accuracy** → Precisão do modelo   
+- **Accuracy** → Precisão do modelo
+- ## 📊 Resultados dos Modelos
+
+| Modelo              | Accuracy | MAE     | MSE     | RMSE   |
+|---------------------|----------|---------|---------|--------|
+| Random Forest       | 0.957529 | 0.042471 | 0.042471 | 0.206085 |
+| KNN                 | **0.973745** | **0.026255** | **0.026255** | **0.162033** |
+| Gradient Boost      | 0.956757 | 0.043243 | 0.043243 | 0.207950 |
+| Decision Tree       | 0.956757 | 0.043243 | 0.043243 | 0.207950 |
+| SVC                 | 0.972201 | 0.027799 | 0.027799 | 0.166731 |
+| Logistic Regressor  | 0.906564 | 0.093436 | 0.093436 | 0.305674 |
+| Ada Boost           | 0.927413 | 0.072587 | 0.072587 | 0.269420 |
+| XGBoost             | 0.960618 | 0.039382 | 0.039382 | 0.198450 |
+
+📌 **Observação:** O modelo **KNN** apresentou o melhor desempenho geral em termos de *Accuracy*, *MAE*, *MSE* e *RMSE*.
+
 
 Além disso, foi utilizada a técnica **MultiComparison** (do Statsmodels) para avaliar estatisticamente as diferenças entre os modelos.
 
