@@ -1,4 +1,4 @@
-# 🏡 House Predictions - Predição de Churn
+# Predição de Churn
 
 Este projeto tem como objetivo **prever churn** (saída de clientes) a partir de dados históricos, explorando diferentes modelos de Machine Learning e avaliando o impacto de pré-processamentos.
 
