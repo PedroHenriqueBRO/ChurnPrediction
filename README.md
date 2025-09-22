@@ -38,7 +38,7 @@ Este projeto tem como objetivo **prever churn** (saída de clientes) a partir de
 - **XGBoost**
 
 Com o uso de:
-- **GridSearchCV** → Busca dos melhores parâmetros para os modelos
+- **GridSearchCV** → Busca dos melhores parâmetros para os modelos.
 ---
 
 ## 📊 Métricas utilizadas
@@ -47,7 +47,7 @@ Para comparar os modelos foram utilizadas métricas estatísticas clássicas de 
 - **MAE (Mean Absolute Error)** → erro médio absoluto.  
 - **MSE (Mean Squared Error)** → erro quadrático médio.  
 - **RMSE (Root Mean Squared Error)** → raiz do erro quadrático médio.  
-- **Accuracy** → Precisão do modelo
+- **Accuracy** → Precisão do modelo.
 - ## 📊 Resultados dos Modelos
 
 | Modelo              | Accuracy | MAE     | MSE     | RMSE   |
@@ -72,9 +72,9 @@ Além disso, foi utilizada a técnica **MultiComparison** (do Statsmodels) para 
 - A análise mostrou diferenças relevantes entre modelos quando lidamos com **dados crus** vs **dados com Smoteen**.  
 - O **KNN** apresentou melhores resultados dentre os outros modelo em relação as métricas e pelo MultiComparison.  
 ![Resultados do MultiComparison](graficos_matrizes_tabelas/GráficoDoMultiComparison.png)
-- Porém quando analisados quanto a melhor precisão o gráfico gerado mostra outros resultados
+- Porém quando analisados quanto a melhor precisão o gráfico gerado mostra outros resultados quando testamos para a base crua o modelo treinado pela base com Smoteen.
 ![Resultados dos Modelos Testados utilizando R² sem Smoteen](graficos_matrizes_tabelas/AlgoritmosTreinadosComSmoteenETestandoBaseNormal.png)
-- O teste foi feito também na base utilizando o resample do Smoteen
+- O teste foi feito também utilizando dados de teste aplicados com Smoteen vendo assim que o modelo treinado com esse resample gera resultados muito bons, já que quando há um equilíbrio na base ,pelas técnica de over e under aplicadas simultaneamente, há então uma grande melhora nos resultados.
 ![Resultados dos Modelos Testados utilizando R² com Smoteen](graficos_matrizes_tabelas/AlgoritmosTreinadosComSmoteenETestandoBaseSmoteen.png)
 - Esses resultados foram gerados por modelos treinados com uma base de treino utilizando o resample do Smoteen pois ela gerou resultados melhores de treino do que a base original.
 ---
