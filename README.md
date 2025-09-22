@@ -2,7 +2,7 @@
 
 Este projeto tem como objetivo **prever churn** (saída de clientes) a partir de dados históricos, explorando diferentes modelos de Machine Learning e avaliando o impacto de pré-processamentos e resample na base de dados.
 # Kaggle
-- Base utilizada para o projeto
+- Base utilizada e explicação sobre o problema do projeto no link a seguir.
 - https://www.kaggle.com/datasets/blastchar/telco-customer-churn
 ## 📌 Objetivos
 - Realizar **análise exploratória de dados (EDA)** para entender os padrões relacionados ao churn.  
