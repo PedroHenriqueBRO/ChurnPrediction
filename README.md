@@ -1,7 +1,9 @@
-# 🏡 House Predictions - Predição de Churn
+# Predição de Churn
 
-Este projeto tem como objetivo **prever churn** (saída de clientes) a partir de dados históricos, explorando diferentes modelos de Machine Learning e avaliando o impacto de pré-processamentos.
-
+Este projeto tem como objetivo **prever churn** (saída de clientes) a partir de dados históricos, explorando diferentes modelos de Machine Learning e avaliando o impacto de pré-processamentos e resample na base de dados.
+# Kaggle
+- Base utilizada para o projeto
+- https://www.kaggle.com/datasets/blastchar/telco-customer-churn
 ## 📌 Objetivos
 - Realizar **análise exploratória de dados (EDA)** para entender os padrões relacionados ao churn.  
 - Comparar o desempenho de diferentes modelos de Machine Learning.  
@@ -45,7 +47,22 @@ Para comparar os modelos foram utilizadas métricas estatísticas clássicas de 
 - **MAE (Mean Absolute Error)** → erro médio absoluto.  
 - **MSE (Mean Squared Error)** → erro quadrático médio.  
 - **RMSE (Root Mean Squared Error)** → raiz do erro quadrático médio.  
-- **Accuracy** → Precisão do modelo   
+- **Accuracy** → Precisão do modelo
+- ## 📊 Resultados dos Modelos
+
+| Modelo              | Accuracy | MAE     | MSE     | RMSE   |
+|---------------------|----------|---------|---------|--------|
+| Random Forest       | 0.957529 | 0.042471 | 0.042471 | 0.206085 |
+| KNN                 | **0.973745** | **0.026255** | **0.026255** | **0.162033** |
+| Gradient Boost      | 0.956757 | 0.043243 | 0.043243 | 0.207950 |
+| Decision Tree       | 0.956757 | 0.043243 | 0.043243 | 0.207950 |
+| SVC                 | 0.972201 | 0.027799 | 0.027799 | 0.166731 |
+| Logistic Regressor  | 0.906564 | 0.093436 | 0.093436 | 0.305674 |
+| Ada Boost           | 0.927413 | 0.072587 | 0.072587 | 0.269420 |
+| XGBoost             | 0.960618 | 0.039382 | 0.039382 | 0.198450 |
+
+📌 **Observação:** O modelo **KNN** apresentou o melhor desempenho geral em termos de *Accuracy*, *MAE*, *MSE* e *RMSE*.
+
 
 Além disso, foi utilizada a técnica **MultiComparison** (do Statsmodels) para avaliar estatisticamente as diferenças entre os modelos.
 
@@ -59,8 +76,7 @@ Além disso, foi utilizada a técnica **MultiComparison** (do Statsmodels) para 
 ![Resultados dos Modelos Testados utilizando R² sem Smoteen](graficos_matrizes_tabelas/AlgoritmosTreinadosComSmoteenETestandoBaseNormal.png)
 - O teste foi feito também na base utilizando o resample do Smoteen
 ![Resultados dos Modelos Testados utilizando R² com Smoteen](graficos_matrizes_tabelas/AlgoritmosTreinadosComSmoteenETestandoBaseSmoteen.png)
-- Esses resultados foram gerados por modelos treinados com uma base de treino utilizando o resample do Smoteen pois ela gerou resultados melhores de treino
-- do que a base original.
+- Esses resultados foram gerados por modelos treinados com uma base de treino utilizando o resample do Smoteen pois ela gerou resultados melhores de treino do que a base original.
 ---
 
 ## 📂 Estrutura do projeto
